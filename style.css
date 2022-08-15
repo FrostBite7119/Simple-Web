@@ -6,13 +6,13 @@ body{
 
 /* Header */
 header{
-    /*background-color: #282A35;*/
     display: flex;
     color: white;
     padding: 10px;
     position: fixed;
     width: 100%;
     top: 0;
+    transition: 0.4s;
 }
 
 header > h2{
@@ -64,6 +64,81 @@ header > nav li a:hover{
 #about-me{
     text-align: center;
     padding: 100px;
+    background-color: #6b6b70;
+    color: white;
+}
+
+/* Contact Me */
+#wadah{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    flex-basis: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#info{
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(13, 71, 205);
+    color: white;
+    border-radius: 10px;
+}
+
+#tabel-alamat{
+    margin-top: 10px;
+}
+
+table, td, th{
+    border: 1px solid #ccc;
+}
+
+td, th{
+    padding: 10px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+}
+
+/* Contact Me*/
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: none;
+}
+
+button{
+    padding: 15px;
+    background-color: rgb(13, 71, 205);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    transition: 0.4s;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(0, 49, 165);
+}
+
+/* Footer */
+footer{
+    text-align: center;
     background-color: #282A35;
     color: white;
+    padding: 20px;
 }
