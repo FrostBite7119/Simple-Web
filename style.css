@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #282A35;
+    display: flex;
+    color: white;
+    padding: 10px;
+}
+header > h2{
+    flex-basis: 10%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header > nav{
+    flex-basis: 90%;
+    margin: auto 0;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header > nav li{
+    display: inline;
+    margin-right: 50px;
+}
+
+header > nav li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+header > nav li a:hover{
+    text-decoration: none;
+    color: rgb(146, 144, 144);
+}
