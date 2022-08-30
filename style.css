@@ -13,6 +13,7 @@ header{
     width: 100%;
     top: 0;
     transition: 0.4s;
+    z-index: 2;
 }
 
 header > h2{
@@ -107,6 +108,103 @@ table{
     border-collapse: collapse;
     width: 100%;
     text-align: left;
+}
+
+/* Riwayat Pendidikkan */
+#wadah-riwayat-pendidikan{
+    background-color: rgba(43, 135, 222, 0.998);
+    padding: 10px;
+    box-sizing: border-box;
+}
+#wadah-text{
+    text-align: center;
+    color: white;
+}
+
+/* The actual timeline (the vertical ruler) */
+#timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+/* The actual timeline (the vertical ruler) */
+#timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    margin-top: 20px;
+}
+
+.container{
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.container::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: -15.6px;
+    background-color: black;
+    top: 18px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left {
+    left: 0;
+}
+
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+.right {
+    left: 50%;
+}
+
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -16px;
+}
+
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
 }
 
 /* Contact Me*/
