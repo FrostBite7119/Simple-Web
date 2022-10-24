@@ -11,7 +11,7 @@
                 <ul>
                     <li><a href="#content">Home</a></li>
                     <li><a href="#about-me">About Me</a></li>
-                    <li><a href="">Contact Me</a></li>
+                    <li onclick="document.getElementById('id01').style.display = 'block'" class="login">Login</li>
                 </ul>
             </nav>
         </header>
@@ -147,6 +147,31 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Modal Start-->
+                <div id="id01" class="modal">
+                    <form class="modal-content animate">
+                        <div class="imgcontainer">
+                            <span class="close" onclick="document.getElementById('id01').style.display ='none'">&times;</span>
+                            <img class="avatar" src="img/img_avatar2.png" alt="">
+                        </div>
+                        <div class="input-element">
+                            <label for="email"><b>Email</b></label>
+                            <input type="email" placeholder="Enter Email...">
+                        </div>
+                        <div class="input-element">
+                            <label for="email"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password...">
+                        </div>
+                        <button class="btn-modal">
+                            Login
+                        </button>
+                        <label>
+                            <input type="checkbox"> Ingat saya
+                        </label>
+                    </form>
+                </div>
+                <!-- Modal End -->
             </div>
         </main>
         <footer>

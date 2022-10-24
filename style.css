@@ -52,6 +52,10 @@ header > nav li a:hover{
     color: rgb(146, 144, 144);
 }
 
+.login:hover{
+    cursor: pointer;
+}
+
 /* Jumbotron */
 #wadah-jumbotron{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/pegunungan.jpg');
@@ -223,7 +227,6 @@ button{
     padding: 15px;
     background-color: rgb(13, 71, 205);
     border: none;
-    border-radius: 4px;
     color: white;
     transition: 0.4s;
 }
@@ -231,6 +234,83 @@ button{
 button:hover{
     cursor: pointer;
     background-color: rgb(0, 49, 165);
+}
+
+/* Modal */
+.modal{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    padding-top: 60px;
+    background-color: rgb(0, 0, 0); /* Fallback Color */
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+.modal-content{
+    background-color: #fefefe;
+    width: 35%;
+    margin: auto;
+    border: 1px solid #888;
+    padding: 10px;
+}
+
+.imgcontainer{
+    text-align: center;
+    position: relative;
+    margin: 24px 0 12px 0;
+}
+
+.avatar{
+    border-radius: 50%;
+    width: 40%;
+}
+
+.close{
+    position: absolute;
+    right: 25px;
+    top: 0;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover{
+    color: red;
+    cursor: pointer;
+}
+
+/* Input */
+input[type=email], input[type=password]{
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid #c1c1c1;
+    margin: 8px 0;
+}
+
+.btn-modal{
+    width: 100%;
+    margin: 8px 0;
+}
+
+.checkbox{
+    margin: 8px 0;
+    padding: 10px;
+}
+
+
+.animate{
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
 }
 
 /* Footer */

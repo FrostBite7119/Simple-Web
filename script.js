@@ -7,3 +7,11 @@ const fungsiScroll = function scrollFunction() {
 }
 
 window.onscroll = fungsiScroll;
+
+const modal = document.getElementById('id01');
+
+modal.onclick = function(e){
+  if(modal == e.target){
+    modal.style.display = 'none';
+  }
+};
